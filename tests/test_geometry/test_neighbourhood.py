@@ -22,7 +22,6 @@ import os
 from pathlib import Path
 
 import pandas as pd
-import pandas.util.testing
 import pytest
 
 import cesarp.geometry.csv_input_parser as cesar_parser
@@ -62,7 +61,7 @@ def test_get_adjacent_buildings():
     sitevertices = vertices_basics.convert_flat_site_vertices_to_per_bldg_footprint(sitevertices_flat)
     result_adjacency = cesar_nh.find_adjacent_footprint_vertices_for(sitevertices.loc[44], sitevertices.to_dict(orient="records"), 0.1)
     expected_adjacency = pd.DataFrame([[-20, 10], [-20, 20]], index=[0, 1], columns=["x", "y"])
-    pandas.util.testing.assert_frame_equal(
+    pd.util.testing.assert_frame_equal(
         result_adjacency[0],
         expected_adjacency,
         check_index_type=False,

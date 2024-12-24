@@ -2,12 +2,16 @@
   <profile version="1.0">
     <option name="myName" value="UESLab" />
     <inspection_tool class="AlphaUnsortedPropertiesFile" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="DuplicatePropertyInspection" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="CURRENT_FILE" value="true" />
-      <option name="MODULE_WITH_DEPENDENCIES" value="false" />
-      <option name="CHECK_DUPLICATE_VALUES" value="true" />
-      <option name="CHECK_DUPLICATE_KEYS" value="true" />
-      <option name="CHECK_DUPLICATE_KEYS_WITH_DIFFERENT_VALUES" value="true" />
+    <inspection_tool class="DuplicatePropertyInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="2.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.13" />
+          </list>
+        </value>
+      </option>
     </inspection_tool>
     <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myAllPythons" value="true" />

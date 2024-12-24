@@ -23,7 +23,6 @@ import pytest
 from pathlib import Path
 
 import pandas as pd
-import pandas.util.testing
 
 from cesarp.geometry import vertices_basics
 import cesarp.geometry.csv_input_parser as cesar_parser
@@ -44,7 +43,7 @@ def test_sitevertices_parser():
         )
         expected_wall_vertices.reset_index()
         expected_wall_vertices = expected_wall_vertices.astype(float)
-        pandas.util.testing.assert_frame_equal(row["footprint_shape"], expected_wall_vertices.drop("height", axis=1))
+        pd.util.testing.assert_frame_equal(row["footprint_shape"], expected_wall_vertices.drop("height", axis=1))
 
 
 def test_sitevertices_parser_csv_heading_wrong():
