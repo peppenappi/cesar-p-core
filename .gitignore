@@ -138,3 +138,6 @@ generated_result
 /.idea/misc.xml
 .vscode/launch.json
 .vscode/settings.json
+/.idea/
+/src/
+
