@@ -187,7 +187,7 @@ def __abs_path(path):
 
 
 # Test can be used for debugging if you want to check if EnergyPlus Installation on CI system works correctly
-@pytest.mark.skipif(sys.platform == "win32", reason="E+ pathes setup for gitlab-CI run")
+@pytest.mark.skipif(sys.platform == "darwin", reason="E+ pathes setup for gitlab-CI run")
 def test_eplus():
     out_dir = __abs_path("./eplus_out")
     shutil.rmtree(out_dir, ignore_errors=True)
