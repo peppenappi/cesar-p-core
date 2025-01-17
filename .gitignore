@@ -25,6 +25,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.idea/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -138,6 +139,3 @@ generated_result
 /.idea/misc.xml
 .vscode/launch.json
 .vscode/settings.json
-/.idea/
-/src/
-
